@@ -1,0 +1,415 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.navbar {
+  transform: translate(0, -710px);
+  width: 100%;
+  height: 10vh;
+  background-color: #545454;
+  display: inline-flex;
+}
+.navbar .logo {
+  width: 10%;
+}
+.navbar .logo .imagem-logo {
+  width: 100%;
+  transform: translate(0, -43px);
+}
+.navbar .logo button {
+  height: 10vh;
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar nav {
+  width: 50%;
+  transform: translate(140px);
+  padding-top: 3vh;
+}
+.navbar nav a.link {
+  font-size: 20px;
+  padding-left: 40px;
+  transform: translate(0, 20px);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+.navbar nav .link:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.navbar nav .seletor {
+  width: 16%;
+  height: 4vh;
+  border-radius: 7px;
+  border-style: solid;
+  transform: translate(40px);
+}
+.navbar nav .seletor:hover {
+  background-color: #545454;
+  color: white;
+  border-color: white;
+}
+.navbar .conteudo {
+  width: 100%;
+  height: 100vh;
+  background-color: #a8a39d;
+}
+.navbar .nome-tl {
+  transform: translate(160px, 0);
+  width: 27%;
+  height: 10vh;
+  background-color: transparent;
+}
+.navbar .nome-tl .icone-inicio {
+  width: 20%;
+  transform: translate(0px, 0px);
+}
+.navbar .nome-tl .local-title {
+  transform: translate(85px, -55px);
+}
+
+form {
+  width: 100%;
+  height: 100vh;
+  background-color: #a8a39d;
+}
+form .column-13 label[for=tipo_pessoa], form .column-12 label[for=status_cliente], form .column-11 label[for=bairro], form .column-10 label[for=n_endereco], form .column-9 label[for=cidade], form .column-8 label[for=endereco], form .column-7 label[for=rg], form .column-6 label[for=cep], form .column-5 label[for=email], form .column-4 label[for=telefone], form .column-3-2 label[for=cnpj], form .column-3 label[for=cpf], form .column-2 label[for=data_nascimento], form .column-1 label[for=nome] {
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+form .column-13 select[id=tipo_pessoa]:hover, form .column-12 select[id=status_cliente]:hover, form .column-11 input[id=bairro]:hover, form .column-10 input[id=n_endereco]:hover, form .column-9 input[name=cidade]:hover, form .column-8 input[name=endereco]:hover, form .column-7 input[name=rg]:hover, form .column-6 input[name=cep]:hover, form .column-5 input[name=email]:hover, form .column-4 input[name=telefone]:hover, form .column-3-2 input[name=cnpj]:hover, form .column-3 input[name=cpf]:hover, form .column-2 input[name=data_nascimento]:hover, form .column-1 input[name=nome]:hover {
+  transition: 0.4s;
+  background-color: rgb(237, 235, 233);
+}
+form .column-1 {
+  width: 30%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 150px);
+  margin-left: 5%;
+}
+form .column-1 input[name=nome] {
+  width: 97%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-2 {
+  width: 26.5%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 85px);
+  margin-left: 38%;
+}
+form .column-2 input[name=data_nascimento] {
+  width: 97%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-3 {
+  width: 12%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 20px);
+  margin-left: 68%;
+}
+form .column-3 input[name=cpf] {
+  width: 93%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-3-2 {
+  width: 12%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -40px);
+  margin-left: 83%;
+}
+form .column-3-2 input[name=cnpj] {
+  width: 93%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-4 {
+  width: 24%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 10px);
+  margin-left: 5%;
+}
+form .column-4 input[id=telefone] {
+  width: 97%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-5 {
+  width: 28%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -55px);
+  margin-left: 32%;
+}
+form .column-5 input[id=email] {
+  width: 97%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-6 {
+  width: 15%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -117px);
+  margin-left: 63%;
+}
+form .column-6 input[id=cep] {
+  width: 95%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-7 {
+  width: 14%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -180px);
+  margin-left: 81%;
+}
+form .column-7 input[id=rg] {
+  width: 95%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-8 {
+  width: 30%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -130px);
+  margin-left: 5%;
+}
+form .column-8 input[id=endereco] {
+  width: 97.5%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-9 {
+  width: 24%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -195px);
+  margin-left: 38%;
+}
+form .column-9 input[id=cidade] {
+  width: 97.5%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-10 {
+  width: 13%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -260px);
+  margin-left: 65%;
+}
+form .column-10 input[id=n_endereco] {
+  width: 94%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-11 {
+  width: 14%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -320px);
+  margin-left: 81%;
+}
+form .column-11 input[id=bairro] {
+  width: 95%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-12 {
+  width: 20%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -270px);
+  margin-left: 5%;
+}
+form .column-12 select[id=status_cliente] {
+  width: 100%;
+  height: 5vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-13 {
+  width: 20%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -335px);
+  margin-left: 28%;
+}
+form .column-13 select[id=tipo_pessoa] {
+  width: 100%;
+  height: 5vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form input[type=submit] {
+  width: 7%;
+  height: 5vh;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 10px;
+  transform: translate(0, 100px);
+  margin-left: 88%;
+  font-size: 18px;
+}
+form input[type=submit]:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px whitesmoke;
+  background-color: #cccccc;
+}
+form input[type=submit]:hover a {
+  color: black;
+}
+
+h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(500px, 150px);
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar {
+    transform: translate(0, -760px);
+  }
+  .navbar .logo .imagem-logo {
+    transform: translate(0, -37px);
+  }
+  .navbar nav {
+    width: 55%;
+    transform: translate(40px);
+  }
+  .navbar .nome-tl {
+    transform: translate(70px, 0);
+    background-color: transparent;
+  }
+  .navbar .nome-tl .icone-inicio {
+    transform: translate(20px, 5px);
+  }
+  .navbar .nome-tl .local-title {
+    font-size: 25px;
+    transform: translate(100px, -45px);
+  }
+}
+@media screen and (max-width: 1370px) {
+  .navbar {
+    transform: translate(0, -646px);
+  }
+  .navbar .logo .imagem-logo {
+    transform: translate(0, -37px);
+  }
+  .navbar nav {
+    width: 55%;
+    transform: translate(40px);
+  }
+  .navbar .nome-tl {
+    background-color: transparent;
+    transform: translate(70px, 0);
+  }
+  .navbar .nome-tl .icone-inicio {
+    transform: translate(20px, -1px);
+  }
+  .navbar .nome-tl .local-title {
+    font-size: 25px;
+    transform: translate(90px, -50px);
+  }
+  form .column-1 {
+    transform: translate(0, 140px);
+  }
+  form .column-2 {
+    transform: translate(0, 80px);
+  }
+  form .column-3 {
+    transform: translate(0, 23px);
+  }
+  form .column-3-2 {
+    transform: translate(0, -35px);
+  }
+  form .column-4 {
+    transform: translate(0, 10px);
+  }
+  form .column-5 {
+    transform: translate(0, -47px);
+  }
+  form .column-6 {
+    transform: translate(0, -105px);
+  }
+  form .column-7 {
+    transform: translate(0, -165px);
+  }
+  form .column-8 {
+    transform: translate(0, -120px);
+  }
+  form .column-9 {
+    transform: translate(0, -175px);
+  }
+  form .column-10 {
+    transform: translate(0, -230px);
+  }
+  form .column-11 {
+    transform: translate(0, -290px);
+  }
+  form .column-12 {
+    transform: translate(0, -250px);
+  }
+  form .column-13 {
+    transform: translate(0, -305px);
+  }
+}/*# sourceMappingURL=cadastro_clientes.css.map */

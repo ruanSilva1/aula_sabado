@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/cadastro_orcamento.css">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Orçamento</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <div class="c1">
+            <label for="nome">Nome/ Fantasia</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div class="cl2">
+            <label for="data_nascimento">Data nascimento</label>
+            <input type="date" name="data_nascimento" id="data_nascimento">
+        </div>
+        <div class="cl3">
+            <label for="cpf">CPF</label>
+            <input type="number" name="cpf" id="cpf">
+        </div>
+        <div class="cl4">
+            <label for="cnpj">CNPJ</label>
+            <input type="number" name="cnpj" id="cnpj">
+        </div>
+        <div class="cl5">
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone">
+        </div>
+        <div class="cl6">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="cl7">
+            <label for="cep">CEP</label>
+            <input type="number" name="cep" id="cep">
+        </div>
+        <div class="cl8">
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="endereco">
+        </div>
+        <div class="cl9">
+            <label for="n_endereco">Nº endereço</label>
+            <input type="text" name="n_endereco" id="n_endereco">
+        </div>
+        <div class="cl10">
+            <label for="forma_pagamento">Forma pagamento</label>
+            <select name="forma_pagamento" id="forma_pagamento">
+                <option value="a_vista">Á vista</option>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="credito_2x">Crédito 2x</option>
+                <option value="credito_3x">Crédito 3x</option>
+                <option value="debito">Débito</option>
+            </select>
+        </div>
+        <div class="cl11">
+            <label for="tipo_pessoa">Tipo pessoa</label>
+            <select name="tipo_pessoa" id="tipo_pessoa">
+                <option value="pessoa_fisica">Pessoa física</option>
+                <option value="pessoa_juridica">Pessoa júridica</option>
+            </select>
+        </div>
+        <div class="cl12">
+            <label for="valor">Valor</label>
+            <input type="text" name="valor" id="valor">
+        </div>
+        <div class="cl13">
+            <label for="status_venda">Status venda</label>
+            <select name="status_venda" id="status_venda">
+                <option value="vendido">Vendido</option>
+                <option value="nao_vendido">Não vendido</option>
+            </select>
+            <label for="status_orcamento">Status orçamento</label>
+            <select name="status_orcamento" id="status_orcamento">
+                <option value="ativo">Ativo</option>
+                <option value="desativo">Desativo</option>
+            </select>
+        </div>
+        <div class="div-cl14">
+            <label for="pedido">Pedido</label>
+            <textarea name="pedido" id="pedido"></textarea>
+        </div>
+        <div class="div-cl15">
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao"></textarea>
+        </div>
+        <div class="i-sub">
+            <input type="submit" value="Salvar">
+        </div>
+    </form>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <button><a href="index.html"><img class="imagem-logo" src="../imagem/SOFTWARE-GAIT-LOGO.png"
+                            alt=""></a></button>
+            </div>
+            <nav>
+                <a class="link" href="inicio.html">Inicio</a>
+                <a class="link" href="fornecedores.html">Fornecedores</a>
+                <a class="link" href="funcionarios.html">Funcionários</a>
+                <a class="link" href="materiaprima.html">Matéria prima</a>
+
+                <select id="menu" class="seletor">
+                    <option value="vendas">Vendas</option>
+                    <option value="orcamentos">Orçamentos</option>
+                    <option value="estoque">Estoque</option>
+                    <option value="clientes">Clientes</option>
+                </select>
+            </nav>
+            <div class="nome-tl">
+                <img class="icone-inicio" src="../imagem/orcamento-removebg-preview.png" alt="icone inicio">
+                <h1 class="local-title">Cadastro Orçamento</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

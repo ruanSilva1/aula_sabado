@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/cadastro_funcionarios.css">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Funcionários</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <input type="submit" value="Salvar">
+        <div class="column-1">
+           <label for="nome">Nome</label>
+           <input type="text" name="nome" id="nome"> 
+        </div>
+        <div class="column-2">
+            <label for="data_nascimento">Data nascimento</label>
+            <input type="date" name="data_nascimento" id="data_nascimento">
+        </div>
+        <div class="column-3">
+            <label for="cpf">CPF</label>
+            <input type="number" name="cpf" id="cpf">
+        </div>
+        <div class="column-4">
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone">
+        </div>
+        <div class="column-5">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="column-6">
+            <label for="cep">CEP</label>
+            <input type="number" name="cep" id="cep">
+        </div>
+        <div class="column-7">
+            <label for="rg">RG</label>
+            <input type="number" name="rg" id="rg">
+        </div>
+        <div class="column-8">
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="endereco">
+        </div>
+        <div class="column-9">
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" id="cidade"x>
+        </div>
+        <div class="column-10">
+            <label for="n_endereco">Nº endereço</label>
+            <input type="text" name="n_endereco" id="n_endereco">
+        </div>
+        <div class="column-11">
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro">
+        </div>
+        <div class="column-12">
+            <label for="status_funcionario">Status funcionário</label>
+            <select name="status_funcionario" id="status_funcionario">
+                <option value="ativado">Ativado</option>
+                <option value="desativado">Desativado</option>
+            </select>
+        </div>
+        <div class="column-13">
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario">
+        </div>
+        <div class="column-14">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+        </div>
+    </form>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <button><a href="index.html"><img class="imagem-logo" src="../imagem/SOFTWARE-GAIT-LOGO.png"
+                            alt=""></a></button>
+            </div>
+            <nav>
+                <a class="link" href="inicio.html">Inicio</a>
+                <a class="link" href="fornecedores.html">Fornecedores</a>
+                <a class="link" href="funcionarios.html">Funcionários</a>
+                <a class="link" href="materiaprima.html">Matéria prima</a>
+
+                <select id="menu" class="seletor">
+                    <option value="vendas">Vendas</option>
+                    <option value="orcamentos">Orçamentos</option>
+                    <option value="estoque">Estoque</option>
+                    <option value="clientes">Clientes</option>
+                </select>
+            </nav>
+            <div class="nome-tl">
+                <img class="icone-inicio" src="../imagem/cadastro_funcionarios-icon-removebg-preview.png" alt="icone inicio">
+                <h1 class="local-title">Cadastro Funcionários</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
